@@ -1,0 +1,25 @@
+group 'com.yefe.test'
+version '1.0'
+
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "io.freefair.gradle:lombok-plugin:3.7.5"
+    }
+}
+
+apply plugin: "io.freefair.lombok"
+apply plugin: "java"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+}
