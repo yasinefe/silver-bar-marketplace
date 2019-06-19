@@ -4,6 +4,7 @@ This is an implementation of Silver Bar Marketplace test
 
 ## To Compile
 
+- Please use Java 8 or newer version.
 - Please enable Annotation Processor in IDE
 
 ## To Run Tests
